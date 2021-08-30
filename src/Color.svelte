@@ -22,7 +22,7 @@
   section {
     margin-bottom: 0.5rem;
     display: flex;
-    gap: 1rem;
+    gap: 0.3rem;
     flex-wrap: wrap;
   }
   h3 {

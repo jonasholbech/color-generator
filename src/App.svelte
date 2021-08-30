@@ -115,6 +115,6 @@
   }
   textarea {
     width: 100%;
-    min-height: 400px;
+    min-height: 200px;
   }
 </style>

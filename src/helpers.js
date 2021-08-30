@@ -5,9 +5,9 @@ export function copyToClipboard() {
   navigator.clipboard.writeText(copyText.value);
 }
 export function getLightnessSteps() {
-  let steps = 9;
-  let min = 16;
-  let max = 96;
+  let steps = 20;
+  let min = 12;
+  let max = 97;
   let range = max - min;
   let ret = [];
   for (let i = min; i < max; i += range / steps) {
@@ -19,7 +19,7 @@ export function getOutput($colors) {
   let ret = "";
   $colors.forEach((col) => {
     getLightnessSteps().forEach((step, index) => {
-      ret += `--color-${col.name}-${index * 100}: hsl(${col.h},${
+      ret += `--color-${col.name}-${index * 50}: hsl(${col.h},${
         col.s
       }%,${Math.round(step)}%);\n`;
     });
